@@ -32,15 +32,15 @@ public:
     }
 
     void dfs(TreeNode* root,vector<int>&v){
-        if(root==NULL)
-        return;
+        if(root==NULL)   // if root doesnt carry any element
+        return;    // return false or return
 
-        if(root->left==NULL && root->right==NULL){
-            v.push_back(root->val);
+        if(root->left==NULL && root->right==NULL){    // if the node doesnt have any right and left children it is known as the leaf node
+            v.push_back(root->val);  //pushing the value of leaf node in the vector
             return;
         }
-        dfs(root->left,v);
-        dfs(root->right,v);
+        dfs(root->left,v);     // now if the root node contains both right and left nodes we will recursively check the left and right nodes to
+        dfs(root->right,v);    // find the leaf nodes
 
     }
 };
