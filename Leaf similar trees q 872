@@ -15,16 +15,16 @@ public:
         vector<int>v1;  //making one vector
         vector<int>v2;   // making another vector
         dfs(root1,v1);    // leaf node gulo ber korar jonno of tree 1 ei function ta use korchi
-         dfs(root2,v2);
+         dfs(root2,v2);  // // leaf node gulo ber korar jonno of tree 1 ei function ta use korchi
 
-         if(v1.size()==v2.size()){
-             for(int i=0;i<v1.size();i++){
-                 if(v1[i]!=v2[i])
-                 return false;
+         if(v1.size()==v2.size()){     // checking if the size of the two vectors is same
+             for(int i=0;i<v1.size();i++){  //now checking if the leave nodes of two strings are same or not
+                 if(v1[i]!=v2[i])   //if it is not same 
+                 return false;    // returning false
              }
-             return true;
+             return true;   // if the leave nodes matches and sequence is also same returning true
          }
-         return false;
+         return false;    // size same nahole returning false
 
 
 
