@@ -22,7 +22,7 @@ public:
                  if(v1[i]!=v2[i])   //if it is not same 
                  return false;    // returning false
              }
-             return true;   // if the leave nodes matches and sequence is also same returning true
+             return true;   // if the leaf nodes matches and sequence is also same returning true
          }
          return false;    // size same nahole returning false
 
