@@ -12,9 +12,9 @@
 class Solution {
 public:
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        vector<int>v1;
-        vector<int>v2;
-        dfs(root1,v1);
+        vector<int>v1;  //making one vector
+        vector<int>v2;   // making another vector
+        dfs(root1,v1);    // leaf node gulo ber korar jonno of tree 1 ei function ta use korchi
          dfs(root2,v2);
 
          if(v1.size()==v2.size()){
